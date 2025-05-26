@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tartas</title>
+      <link rel="stylesheet" href="CSS/stylemenu.css">
+    <!--Fuente titulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <!--Fuente textos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="menu">
+     <div class="headercontenido">
+        <div class="logo-texto">
+    <img src="imagenes/logo.png" class="logo">
+    <p class="texto-desktop">Montaz Bakery</p>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html#nosotros">Nosotros</a></li>
+        <li><a href="menu.html#menu">Menú</a></li>
+        <li><a href="ordena.html">Ordenar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+  </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="js/script.js"></script>
+    </header>
+    <main>
+        <section class="card">
+            <h2 class="titulo">Tarta de banana</h2>
+            <img class="imagen1"  src="imagenes/tartaBanana.jpg" alt="">
+            <p class="descripcion1"> Galleta de mantequilla, rellena de chocolate y banana. <b>$430</b></p>
+            <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Tarta de fresa</h2>
+            <img class="imagen1"  src="imagenes/tartaFresa.jpg" alt="">
+            <p class="descripcion1">Rellena de Cheesecake japonés, crema de limón y crema batida. <b> $430</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+          </section>
+         <section class="card">
+            <h2 class="titulo">Mostachón</h2>
+            <img class="imagen1"  src="imagenes/tartaMostachon.jpg" alt="">
+            <p class="descripcion1">Bizcocho con una combinación de nuez, galleta y merengue.  <b>$500</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Mostachón de corazón</h2>
+            <img class="imagen1"  src="imagenes/Mostachoncorazon.jpg" alt="">
+            <p class="descripcion1">Bizcocho con una combinación de nuez, galleta y merengue.<b>$360</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+             <section class="card">
+            <h2 class="titulo">Mostachón de Frutos Rojos</h2>
+            <img class="imagen1"  src="imagenes/mostachondefrutas.jpg" alt="">
+            <p class="descripcion1">Mostachón grande con gel de frutos rojos y ganache de chocolate blanco.<b>$500</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+         
+
+
+
+<script>
+    function ordenar() {
+      alert("¡Tu pedido ha sido realizado!");
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+       <footer>
+        <p>Montaz Bakery® &mdash; Todos los derechos reservados 2025</p>
+    </footer>
+</body>
+</html>

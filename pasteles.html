@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pasteles</title>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/stylemenu.css">
+    <!--Fuente titulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <!--Fuente textos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+<header id="menu">
+     <div class="headercontenido">
+        <div class="logo-texto">
+    <img src="imagenes/logo.png" class="logo">
+    <p class="texto-desktop">Montaz Bakery</p>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html#nosotros">Nosotros</a></li>
+        <li><a href="menu.html#menu">Menú</a></li>
+        <li><a href="ordena.html">Ordenar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+  </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="js/script.js"></script>
+    </header>
+    <main>
+        <section class="card">
+          
+            <h2 class="titulo">Pastel 5 leches</h2>
+            <img class="imagen1"  src="imagenes/pastel5leches.jpg" alt="">
+            <p class="descripcion1">Bizcocho de vainilla bañado con el jarabe de 5 leches y cubiertro con ganache montada de queso crema.<b>$530</b></p>
+            <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Pastel Flor</h2>
+            <img class="imagen1"  src="imagenes/pastelFlor.jpg" alt="">
+            <p class="descripcion1">Sabor pistacho y zanahoria. Cubierto con chantilly de queso crema y pulverizado de chocolate. <b> $380</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+          </section>
+         <section class="card">
+            <h2 class="titulo">Pastel Red Velvet</h2>
+            <img class="imagen1"  src="imagenes/pastelRedVelvet.jpg" alt="">
+            <p class="descripcion1">Bizcocho red velvet, chispas de chocolate y chantilly de queso crema. <b>$490</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Pastel Coconut</h2>
+            <img class="imagen1"  src="imagenes/pastelCoconut.jpg" alt="">
+            <p class="descripcion1">Bizcocho de coco, centro de crema de coco, chantilly de coco, cubierto con coco rape.<b>$500</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+             <section class="card">
+            <h2 class="titulo">Pastel Confeti</h2>
+            <img class="imagen1"  src="imagenes/pastelConfeti.jpg" alt="">
+            <p class="descripcion1">Nude cake con bizcocho de vainilla, sprinkles, betún de queso crema y macarons.<b>$490</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+           <section class="card">
+            <h2 class="titulo">Pastel de Zanahoria</h2>
+            <img class="imagen1"  src="imagenes/pastelZanahoria.jpg" alt="">
+            <p class="descripcion1">Bizcocho de zanahoria con nuez pecana, mermelada de zanahoria y chantilly de queso crema.<b>$490</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+           <section class="card">
+            <h2 class="titulo">Pastel de Fresas con crema</h2>
+            <img class="imagen1"  src="imagenes/pastelFresa.jpg" alt="">
+            <p class="descripcion1">Bizcocho de vainilla, chantilly de queso crema y fresa fresca.<b>$530</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+           <section class="card">
+            <h2 class="titulo">Pastel de Elote</h2>
+            <img class="imagen1"  src="imagenes/pastelElote.jpg" alt="">
+            <p class="descripcion1">Bizcocho de elote con relleno de guayaba, cubierto de queso crema.<b>$550</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Pastel de Selva Negra</h2>
+            <img class="imagen1"  src="imagenes/pastelSelvanegra.jpg" alt="">
+            <p class="descripcion1">Bizcocho de chocolate, gel de cereza y chantilly<b>$550</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+  <section class="card">
+            <h2 class="titulo">Pastel de Love</h2>
+            <img class="imagen1"  src="imagenes/pastelLove.jpg" alt="">
+            <p class="descripcion1">Bizcocho red velvet, betún de queso crema y relleno de Nutella.<b>$380</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Pastel personalizados</h2>
+            <img class="imagen1"  src="imagenes/pastelTrex.jpg" alt="">
+            <p class="descripcion1">Pasteles personalizados para cualquier ocasión<b>$550</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+             <section class="card">
+            <h2 class="titulo">Pastel de Boda</h2>
+            <img class="imagen1"  src="imagenes/pastelBoda.jpg" alt="">
+            <p class="descripcion1">Sabor pistacho y vainilla, con relleno de frutos rojos.<b>$550</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+
+
+  <script>
+    function ordenar() {
+      alert("¡Tu pedido ha sido realizado!");
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Montaz Bakery® &mdash; Todos los derechos reservados 2025</p>
+    </footer>
+</body>
+
+</body>
+</html>

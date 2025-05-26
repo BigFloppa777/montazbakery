@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedir pastel - Montaz Bakery</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  
+</head>
+<body>
+
+    <header id="nosotros">
+        <div class="headercontenido">
+           <div class="logo-texto">
+       <img src="imagenes/logo.png" class="logo">
+       <p class="texto-desktop">Montaz Bakery</p>
+       </div>
+       <nav class="nav-menu">
+         <ul>
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="nosotros.html#nosotros">Nosotros</a></li>
+           <li><a href="menu.html#menu">Menú</a></li>
+           <li><a href="ordena.html">Ordenar</a></li>
+           <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+       </nav>
+       <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+     </div>
+    
+       <div class="overlay hidden"></div>
+    
+       <script src="js/script.js"></script>
+       </header>
+
+  <main>
+    <section class="pedido-box">
+        <img src="imagenes/logo.png" class="logo" style="width: 60px; display:block; margin: 0 auto 1rem;">
+
+        <h2>Realiza tu pedido</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        
+          <label for="contacto">Teléfono o correo:</label>
+          <input type="text" id="contacto" name="contacto" placeholder="Ej. 6561234567 o email@" required>
+        
+          <label for="tipo">Tipo de pastel:</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecciona uno</option>
+            <option>Chocolate</option>
+            <option>Vainilla</option>
+            <option>Red Velvet</option>
+            <option>Personalizado</option>
+          </select>
+        
+          <label>Tamaño:</label>
+          <div class="radios">
+            <label><input type="radio" name="tamaño" value="pequeño" required> Pequeño (6 personas)</label>
+            <label><input type="radio" name="tamaño" value="mediano"> Mediano (10 personas)</label>
+            <label><input type="radio" name="tamaño" value="grande"> Grande (más de 15)</label>
+          </div>
+        
+          <label for="fecha">Fecha de entrega deseada:</label>
+          <input type="date" id="fecha" name="fecha" required>
+        
+          <label for="comentarios">Comentarios adicionales:</label>
+          <textarea id="comentarios" name="comentarios" placeholder="Sabor extra, decoración, etc."></textarea>
+        
+          <div class="full-width">
+            <button type="submit">Realizar pedido</button>
+          </div>
+        </form>
+    </section>
+  </main>
+  <footer>
+    <p>Montaz Bakery® &mdash; Todos los derechos reservados 2025</p>
+</footer>
+</body>
+</html>

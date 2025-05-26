@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reposteria</title>
+     <link rel="stylesheet" href="CSS/stylemenu.css">
+    <!--Fuente titulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <!--Fuente textos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="menu">
+     <div class="headercontenido">
+        <div class="logo-texto">
+    <img src="imagenes/logo.png" class="logo">
+    <p class="texto-desktop">Montaz Bakery</p>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html#nosotros">Nosotros</a></li>
+        <li><a href="menu.html#menu">Menú</a></li>
+        <li><a href="ordena.html">Ordenar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+  </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="js/script.js"></script>
+    </header>
+    <main>
+        <section class="card">
+            <h2 class="titulo">Brownies</h2>
+            <img class="imagen1"  src="imagenes/brownies.jpg" alt="">
+            <p class="descripcion1">Docena de Brownies suaves y húmedos de doble chocolate. <b>$340</b></p>
+            <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Choux</h2>
+            <img class="imagen1"  src="imagenes/choux2.jpg" alt="">
+            <p class="descripcion1">Choux de cereza, pistacho y avellana. <b> $40</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+          </section>
+         <section class="card">
+            <h2 class="titulo">Brookie</h2>
+            <img class="imagen1"  src="imagenes/brookie2.jpg" alt="">
+            <p class="descripcion1">Postre elaborado con un brownie y una galleta <b>$40</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Rosca de Reyes</h2>
+            <img class="imagen1"  src="imagenes/rosca.jpg" alt="">
+            <p class="descripcion1">Saborizada con ralladura de cítricos,rellena de cremoso y jalea de frutos rojos.<b>$530</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+             <section class="card">
+            <h2 class="titulo">Rosca de Reyes normal</h2>
+            <img class="imagen1"  src="imagenes/roscaNormal.jpg" alt="">
+            <p class="descripcion1">Relleno de Crema de avellana o de Queso crema y mermelada de frutos.Depende de tu gusto<b>$270/$300</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+           <section class="card">
+            <h2 class="titulo">Galletas</h2>
+            <img class="imagen1"  src="imagenes/galletas.jpg" alt="">
+            <p class="descripcion1"> Galletas de Red velvet y queso crema,Chispas y malvaviscos, Matcha almendra y queso crema<b>$230</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+           <section class="card">
+            <h2 class="titulo">Macaroons</h2>
+            <img class="imagen1"  src="imagenes/macarons.jpg" alt="">
+            <p class="descripcion1">Macarons de Caramelo, Cereza, Café-Avellana, Chocolate, etc.<b>$170</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+           <section class="card">
+            <h2 class="titulo">Torre de Macaroons</h2>
+            <img class="imagen1"  src="imagenes/torreMacaroons.jpg" alt="">
+            <p class="descripcion1">Perfecta para celebrar tus eventos especiales!<b>$550</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Petit Fours</h2>
+            <img class="imagen1"  src="imagenes/petitfours.jpg" alt="">
+            <p class="descripcion1">Boacadillos dulces como Cupcake, miniChoux,Tarta mini etc.<b>Cotizar precio</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+  <section class="card">
+            <h2 class="titulo">Caja de Postres</h2>
+            <img class="imagen1"  src="imagenes/postresVarios2.jpg" alt="">
+            <p class="descripcion1">Arma tú caja de postres<b>$150</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+          <section class="card">
+            <h2 class="titulo">Baklava</h2>
+            <img class="imagen1"  src="imagenes/blaklava.jpg" alt="">
+            <p class="descripcion1">Postre de origen Turco, láminas de pasta filó con relleno de pistacho.<b>$230</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+             <section class="card">
+            <h2 class="titulo">Cheesecake</h2>
+            <img class="imagen1"  src="imagenes/cheesecake2.jpg" alt="">
+            <p class="descripcion1">Deliciosos Cheesecakes con galleta oreo para comer!<b>$45</b></p>
+             <button class="btn-ordenar" onclick="ordenar()"><b>Ordenar</b></button>
+        </section>
+
+
+
+
+<script>
+    function ordenar() {
+      alert("¡Tu pedido ha sido realizado!");
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Montaz Bakery® &mdash; Todos los derechos reservados 2025</p>
+    </footer>
+</body>
+</html>

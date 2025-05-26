@@ -1,0 +1,521 @@
+
+:root {
+  --color-principal: #fe3a78; /*Nav, footer, algunos titulos*/
+  --color-secundario: #fae8f2; /*fondos, p*/
+  --font-textos: "Quicksand", sans-serif;
+  --font-titulos: "Playfair", serif;
+}
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    background-color: var(--color-principal);
+    min-height: 20vh;
+    padding: 1rem;
+}
+
+.headercontenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    
+
+}
+
+.logo{
+    width: clamp(80px, 25vw, 120px);
+    height: auto;
+    object-fit: contain;
+}
+   
+
+/*boton*/
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 4rem; /*tamaño botoooon */
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/*barra lateral*/
+
+.nav-menu{
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    padding: 2rem 1rem;
+     box-shadow: -2px 0 5px rgba(0,0,0,0.3); 
+    background-color: var(--color-secundario);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-menu ul{
+    list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   
+
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: var(--color-principal);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+/*oscurecimiento al abrir barra lateral*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+main{
+    background-image: url(../imagenes/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/*menu*/
+
+.pasteles{
+   background-image: url(../imagenes/pastelFresa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 80%;
+    max-height: 60%;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-titulos);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+     text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+.pasteles a{
+     text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1); ;
+    padding: 0.5rem 0;
+}
+.Tartas{
+      background-image: url(../imagenes/tartaMostachon.jpg);
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-titulos);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.Tartas a{
+     text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+      text-shadow: 30px 20px 20px black;
+}
+.reposteria{
+  background-image: url(../imagenes/brookie2.jpg);
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-titulos);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.reposteria a{
+     text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+      text-shadow: 30px 20px 20px black;
+}
+.card {
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-top: 9%;
+  background-color: var(--color-principal);
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo{
+ font-family: var(--font-titulos);
+  color: white;
+   font-size: 30px;
+}
+.descripcion1{
+    padding: 2rem 1rem;
+  font-family: var(--font-textos);
+  color: white;
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagen1 {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: none;
+  max-width: 400px;
+  border-radius: 1rem;
+
+}
+.btn-ordenar{
+    background-color: var(--color-secundario); /* Verde */
+      border: none;
+      color: var(--color-principal);
+      padding: 12px 24px;
+      text-align: center;
+      font-family: var(--font-titulos);
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+      border-radius: 8px;
+      cursor: pointer;
+}
+
+
+.estrellas{
+    color: gold;
+     font-size: clamp(1rem, 2vw, 1.6rem);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+/*reseña propia*/
+
+.formulario-reseña{
+    background-color: white;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-textos);
+}
+
+.titulo-formulario{
+    font-family: var(--font-titulos);
+    font-size: 1.5rem;
+    color: var(--color-principal);
+    margin-bottom: 1.5rem;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--font-textos);
+    font-size: 0.9rem;
+}
+
+
+/*sobre nosotros*/
+.sobre-nosotros {
+  padding: 2rem 1rem;
+  font-family: var(--font-textos);
+  background-color: white;
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.imagen-nosotros img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-nosotros {
+  max-width: 600px;
+  text-align: center;
+}
+
+.texto-nosotros h2 {
+  font-family: var(--font-titulos);
+  color: var(--color-principal);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.texto-nosotros p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+  .texto-desktop{
+    display: none;
+    font-family: var(--font-titulos);
+    color: white;
+    font-size: 3rem;
+    margin-left: 0.2rem;
+  }
+
+  .contenedor-principal {
+  display: block; 
+}
+
+/*medias*/
+
+@media (min-width: 768px) {
+
+    .texto-desktop{
+        display: block;
+    }
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex !important; /* mostrar la nav */
+    box-shadow: none;
+    justify-content: flex-end;
+    background-color: var(--color-principal);
+    position: static;
+    height: auto;
+    padding: 0;
+    width: auto;
+    
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-menu li a {
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .headercontenido {
+    flex-grow: 1;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    
+    
+  }
+
+  .logo-texto{
+    display: flex;
+    align-items: center;
+
+}
+.pastel1 {
+width: 100%;
+display: flex;
+
+}
+.descripcion1{
+width: 100%;
+font-size: 50;
+  font-family: var(--font-textos);
+  color: white;
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+}
+.imagen1 {
+  width: 100%;
+
+}
+
+}
+@media (min-width: 1024px) {
+
+    .texto-desktop{
+        display: block;
+    }
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex !important; /* mostrar la nav */
+    box-shadow: none;
+    justify-content: flex-end;
+    background-color: var(--color-principal);
+    position: static;
+    height: auto;
+    padding: 0;
+    width: auto;
+    
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-menu li a {
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .headercontenido {
+    flex-grow: 1;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    
+    
+  }
+
+  .logo-texto{
+    display: flex;
+    align-items: center;
+
+}
+.pasteles{
+
+  height: 100px;
+  margin-top: 60px;
+margin-bottom: 50px;
+}
+.pasteles a{
+  text-shadow: 30px 20px 20px black;
+  font-size: 30px;
+}
+.Tartas{
+    height: 100px;
+  margin-top: 60px;
+margin-bottom: 50px;
+}
+.Tartas a{
+  text-shadow: 30px 20px 20px black;
+  font-size: 30px;
+}
+.reposteria{
+   height: 100px;
+  margin-top: 60px;
+margin-bottom: 50px;
+
+}
+.reposteria a{
+  text-shadow: 30px 20px 20px black;
+  font-size: 30px;
+}
+.card {
+width: 400px;
+display: inline-block;
+flex-direction: row;
+margin-left: 60px;
+
+}
+.titulo{
+  font-size: 30px;
+}
+.descripcion1{
+font-size: 20px;
+  font-family: var(--font-textos);
+  color: white;
+  border-radius: 1.8rem;
+  flex-direction: column;
+  align-items: center;
+
+
+  gap: 1rem;
+}
+.imagen1{
+margin-top: 20px;
+}
+}

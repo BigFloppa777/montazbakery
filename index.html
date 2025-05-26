@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--Fuente titulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <!--Fuente textos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>MontazBakery</title>
+</head>
+
+
+
+<body>
+
+    <header id="nosotros">
+     <div class="headercontenido">
+        <div class="logo-texto">
+    <img src="imagenes/logo.png" class="logo">
+    <p class="texto-desktop">Montaz Bakery</p>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html#nosotros">Nosotros</a></li>
+        <li><a href="menu.html#menu">Menú</a></li>
+        <li><a href="ordena.html">Ordenar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+  </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="js/script.js"></script>
+    </header>
+
+
+ 
+
+
+
+
+<main>
+
+    <!--slider-->
+    <div class="contenedor-principal">
+
+    <section class="slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="imagenes/brookie.jpg">
+                <p>Increible combinación de brownie y galleta</p>
+            </div>
+
+            <div class="slide">
+                <img src="imagenes/choux.jpg">
+                <p>Choux de pistacho, fresa y café</p>
+            </div>
+
+            <div class="slide">
+                <img src="imagenes/cheesecake.jpg">
+                <p>Cheesecake de queso crema y galleta oreo</p>
+            </div>
+        </div>
+    </section>
+      <section class="descripcion">
+        <p>
+            En Montaz Bakery horneamos momentos especiales. Somos un emprendimiento dedicado a crear pasteles
+            personalizados, repostería fina, galletas y brownies irresistibles, todo hecho por pedido y con mucho
+            cariño.
+            No tenemos tienda física, pero llevamos el sabor directamente a ti. ¿Listo para endulzar tu día?
+            ¡Escríbenos y haz tu pedido!
+        </p>
+
+    </section>
+
+    </div>
+
+
+    <!--descripción-->
+
+  
+
+    <!--Reseñas-->
+
+    <div class="seccion-reseñas-formulario">
+
+    <section class="reseñas">
+        <h2 class="titulo-reseñas"> ¿Que dicen nuestros clientes?</h2>
+
+        <div class="contenedor-reseñas">
+            <div class="tarjeta-reseña">
+                <div class="estrellas">★★★★★</div>
+                <p>¡Los brownies están deliciosos! Todo llegó a tiempo y súper bonito.</p>
+                <span class="autor">-Andrea Rodriguez</span>
+
+            </div>
+                <div class="tarjeta-reseña">
+                    <div class="estrellas">★★★★★</div>
+                    <p>Encantada con el pastel de boda, fue el centro de atención."</p>
+                    <span class="autor">-Luis Medrano</span>
+                
+            </div>
+                <div class="tarjeta-reseña">
+                    <div class="estrellas">★★★★★</div>
+                    <p>Pido cada semana, ya soy fan de sus galletas.</p>
+                    <span class="autor">-Karla Garcia</span>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--reseña propia-->
+    <section class="formulario-reseña">
+  <h2 class="titulo-formulario">Déjanos un comentario</h2>
+
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" rows="4" placeholder="Cuéntanos tu experiencia..." required></textarea>
+
+    <label for="calificacion">Calificación:</label>
+    <select id="calificacion">
+      <option value="5">★★★★★</option>
+      <option value="4">★★★★☆</option>
+      <option value="3">★★★☆☆</option>
+      <option value="2">★★☆☆☆</option>
+      <option value="1">★☆☆☆☆</option>
+    </select>
+
+    <button type="submit">Enviar reseña</button>
+  </form>
+</section>
+</div>
+
+
+</main>
+
+<footer>
+    <p>Montaz Bakery® &mdash; Todos los derechos reservados 2025</p>
+</footer>
+</body>
+
+</html>
